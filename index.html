@@ -41,7 +41,26 @@
             color: white;
             padding: 20px 0;
         }
+        .project-card {
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+    
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+        }
+    
+        .project-card h5 {
+            transition: color 0.3s ease;
+        }
+    
+        .project-card:hover h5 {
+            color: #0d6efd;
+        }
     </style>
+    
 </head>
 
 <body>
@@ -136,31 +155,94 @@ With a blend of technical expertise and domain understanding, I aim to contribut
 </section>
 
 <!-- PROJECTS -->
+<!-- PROJECTS -->
 <section id="projects" class="section">
     <div class="container">
         <h2 class="fw-bold text-center mb-5">Projects</h2>
+
         <div class="row g-4">
+
+            <!-- Portfolio -->
             <div class="col-md-4">
-                <div class="card p-3">
+                <div class="card p-3 h-100 project-card">
+                    <h5>Portfolio Website</h5>
+                    <p class="text-muted">
+                        A single-page responsive portfolio website built using HTML, CSS, and Bootstrap
+                        to showcase my skills, projects, experience, and contact details.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Parking Management System -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100 project-card">
                     <h5>Parking Management System</h5>
-                    <p class="text-muted">Django-based system with authentication and category management.</p>
+                    <p class="text-muted">
+                        A Django-based parking management application designed to manage parking slots,
+                        user authentication, and category-based operations efficiently.
+                    </p>
                 </div>
             </div>
+
+            <!-- Student Management System -->
             <div class="col-md-4">
-                <div class="card p-3">
+                <div class="card p-3 h-100 project-card">
+                    <h5>Student Management System</h5>
+                    <p class="text-muted">
+                        A Django web application for maintaining student records with CRUD operations
+                        and database integration.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Spotify Clone -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100 project-card">
                     <h5>Spotify Clone</h5>
-                    <p class="text-muted">Music streaming web app using Django and Spotify API.</p>
+                    <p class="text-muted">
+                        A music streaming web application inspired by Spotify, developed using Django
+                        and APIs to deliver dynamic content.
+                    </p>
                 </div>
             </div>
+
+            <!-- News Portal -->
             <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Insurance Automation</h5>
-                    <p class="text-muted">Rule-based insurance eligibility and decline system.</p>
+                <div class="card p-3 h-100 project-card">
+                    <h5>News Portal</h5>
+                    <p class="text-muted">
+                        A Django-based news portal that displays categorized news content with
+                        admin-side content management functionality.
+                    </p>
                 </div>
             </div>
+
+            <!-- Location Finder -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100 project-card">
+                    <h5>Location Finder</h5>
+                    <p class="text-muted">
+                        A Django application designed to fetch and display location-related information
+                        using backend logic.
+                    </p>
+                </div>
+            </div>
+
+            <!-- OTT Platform -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100 project-card">
+                    <h5>OTT Platform</h5>
+                    <p class="text-muted">
+                        An OTT-style web application built with Django that simulates streaming platform
+                        features such as content listing and user interaction.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
+
 
 <!-- CONTACT -->
 <section id="contact" class="section bg-light">
